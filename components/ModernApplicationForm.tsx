@@ -40,9 +40,9 @@ export default function ModernApplicationForm() {
   };
 
   return (
-    <section id="apply" className="py-20 bg-muted/30">
+    <section id="apply" className="py-12 md:py-20 bg-muted/30">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left side - Content */}
           <div className="space-y-8 animate-slide-up">
             <div>
@@ -72,7 +72,7 @@ export default function ModernApplicationForm() {
             </div>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-success/10 text-success rounded-lg flex items-center justify-center">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,9 +113,9 @@ export default function ModernApplicationForm() {
 
           {/* Right side - Form */}
           <div className="animate-scale-in">
-            <div className="card p-8">
+            <div className="card p-6 md:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       お名前 <span className="text-destructive">*</span>
@@ -149,7 +149,7 @@ export default function ModernApplicationForm() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                       電話番号

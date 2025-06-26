@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function ModernHero() {
   return (
-    <section id="hero" className="pt-16 pb-20 bg-background">
+    <section id="hero" className="pt-16 pb-12 md:pb-20 bg-background">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[70vh] lg:min-h-[80vh]">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
@@ -15,13 +15,13 @@ export default function ModernHero() {
                 最新のAI開発ツール
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
                 Claude Codeで
                 <br />
                 <span className="gradient-text">開発を革新</span>
               </h1>
               
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl text-balance">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl text-balance">
                 AIペアプログラミングの最前線で、あなたの開発スキルを次のレベルへ。
                 実践的な学習で、効率的なコーディングを身につけましょう。
               </p>
@@ -78,8 +78,8 @@ export default function ModernHero() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
             </div>
             
-            {/* Floating cards */}
-            <div className="absolute -top-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in">
+            {/* Floating cards - Hidden on mobile */}
+            <div className="hidden md:block absolute -top-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center">
                   <svg className="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +93,7 @@ export default function ModernHero() {
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in" style={{ animationDelay: '0.2s' }}>
+            <div className="hidden md:block absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-info/10 rounded-lg flex items-center justify-center">
                   <svg className="w-5 h-5 text-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">

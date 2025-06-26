@@ -65,7 +65,7 @@ export default function CleanFeatures() {
   ];
 
   return (
-    <section id="features" className="py-20 bg-muted/30">
+    <section id="features" className="py-12 md:py-20 bg-muted/30">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
@@ -81,11 +81,11 @@ export default function CleanFeatures() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="card p-6 hover:shadow-glow transition-all duration-300 animate-scale-in"
+              className="card p-4 md:p-6 hover:shadow-glow transition-all duration-300 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image */}

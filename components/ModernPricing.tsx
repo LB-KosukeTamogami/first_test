@@ -68,7 +68,7 @@ export default function ModernPricing() {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-muted/30">
+    <section id="pricing" className="py-12 md:py-20 bg-muted/30">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
@@ -111,11 +111,11 @@ export default function ModernPricing() {
         </div>
 
         {/* Plans Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`card p-8 relative animate-scale-in ${
+              className={`card p-6 md:p-8 relative animate-scale-in ${
                 plan.popular 
                   ? 'ring-2 ring-primary shadow-glow scale-105' 
                   : ''
@@ -181,7 +181,7 @@ export default function ModernPricing() {
         </div>
 
         {/* Bottom Features */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 animate-fade-in">
           <div className="text-center">
             <div className="w-12 h-12 bg-success/10 text-success rounded-xl flex items-center justify-center mx-auto mb-4">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -37,7 +37,7 @@ export default function ModernFAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 bg-background">
+    <section id="faq" className="py-12 md:py-20 bg-background">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
@@ -101,7 +101,7 @@ export default function ModernFAQ() {
             <p className="text-muted-foreground mb-6">
               お気軽にお問い合わせください。専門スタッフが丁寧にお答えします。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center">
               <a
                 href="mailto:support@claude-code-course.com"
                 className="btn btn-primary px-6 py-3"

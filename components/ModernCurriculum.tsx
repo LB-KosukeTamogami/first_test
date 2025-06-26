@@ -57,7 +57,7 @@ export default function ModernCurriculum() {
   ];
 
   return (
-    <section id="curriculum" className="py-20 bg-background">
+    <section id="curriculum" className="py-12 md:py-20 bg-background">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
@@ -73,11 +73,11 @@ export default function ModernCurriculum() {
         </div>
 
         {/* Curriculum Timeline */}
-        <div className="space-y-12">
+        <div className="space-y-8 lg:space-y-12">
           {weeks.map((week, index) => (
             <div
               key={index}
-              className={`grid lg:grid-cols-2 gap-8 items-center animate-scale-in ${
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center animate-scale-in ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
