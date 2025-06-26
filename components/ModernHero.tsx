@@ -79,30 +79,30 @@ export default function ModernHero() {
             </div>
             
             {/* Floating cards - Hidden on mobile */}
-            <div className="hidden md:block absolute -top-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in">
+            <div className="hidden md:block absolute -top-6 -left-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 shadow-lg animate-scale-in">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5" fill="none" stroke="rgb(139 92 246)" viewBox="0 0 24 24">
+                <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold" style={{ color: 'rgb(139 92 246)' }}>コード生成完了</div>
-                  <div className="text-xs" style={{ color: 'rgb(139 92 246)' }}>99.2% 精度</div>
+                  <div className="text-sm font-semibold text-gray-900 dark:text-white">コード生成完了</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-300">99.2% 精度</div>
                 </div>
               </div>
             </div>
             
-            <div className="hidden md:block absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-soft animate-scale-in" style={{ animationDelay: '0.2s' }}>
+            <div className="hidden md:block absolute -bottom-6 -right-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 shadow-lg animate-scale-in" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5" fill="none" stroke="rgb(139 92 246)" viewBox="0 0 24 24">
+                <div className="w-10 h-10 bg-info/10 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold" style={{ color: 'rgb(139 92 246)' }}>開発速度</div>
-                  <div className="text-xs" style={{ color: 'rgb(139 92 246)' }}>10倍向上</div>
+                  <div className="text-sm font-semibold text-gray-900 dark:text-white">開発速度</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-300">10倍向上</div>
                 </div>
               </div>
             </div>
